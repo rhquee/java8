@@ -1,6 +1,7 @@
 package pl.kfrak.java8;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
@@ -45,6 +46,16 @@ import java.util.function.Predicate;
                 list.add(10);
                 list.add(3);
 
+
+                //zamiana listy(kolekcji) na strumien
+                list.stream();
+
+                //zamiana tablicy na strumien
+                int[] array = new int[10];
+                Arrays.stream(array);
+
+
+                //z uzyciem klasy anonimowej
                 list.stream()
                         .forEach(
                                 new Consumer<Integer>() {
@@ -56,6 +67,7 @@ import java.util.function.Predicate;
                         );
 
 
+                //z uzyciem lambdy = lukier syntaktyczny - cos ladnie zapisane (ladny sposob zapisania)
                 list.stream().forEach(x -> System.out.println(x));
 
 
