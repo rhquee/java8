@@ -179,6 +179,9 @@ public class Streams2 {
         double average = intSummaryStatistics.getAverage();
         int max = intSummaryStatistics.getMax();
 
+        //DISTINCT
+        //usuwa duplikaty
+        list.stream().distinct();
 
         // SPŁASZCZANIE - FLAT MAP
         List<List<String>> lists = new ArrayList<>();
